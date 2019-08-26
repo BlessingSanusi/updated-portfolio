@@ -31,3 +31,19 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+var list = document.getElementsByClassName("text__alternate");
+var featuredText = document.querySelector(".text__featured");
+var delayCount = list.length * 2.5;
+
+// delay each alternate word 2.5s
+for (var i = 0; i < list.length; i++) {
+  list[i].style.animationDelay = i * 2.5 + "s";
+}
+
+// delay final word and underline
+featuredText.style.animationDelay = delayCount + 1.5 + "s";
+document.styleSheets[0].addRule(
+  "span.text__featured::after",
+  "animation-delay:" + (delayCount + 2) + "s;"
+);

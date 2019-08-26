@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Welcome To My Portfolio</title>
+    <title>My Resume</title>
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
       rel="stylesheet"
@@ -14,9 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/resume.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body id="bg-img">
+  <body>
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -28,8 +29,8 @@
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="/" class="nav-link">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
               Home
             </a>
           </li>
@@ -43,8 +44,8 @@
               My Work
             </a>
           </li>
-          <li class="nav-item" id="resume">
-            <a href="resume.html" class="nav-link">
+          <li class="nav-item current">
+            <a href="resume.html" id="resume" class="nav-link">
               My Resume
             </a>
           </li>
@@ -56,34 +57,30 @@
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <h1 class="lg-heading">
-        Blessing <span class="text-secondary">Sanusi</span>
-      </h1>
-      <!-- <h2 class="sm-heading">
-        Web Developer, Programmer and Designer
-      </h2> -->
-      <h2 class="text sm-heading">
-        I am a <span class="text__featured">Web Developer</span>
+    <main id="about">
+      <!-- <div class="top-bar">
+        <button class="btn" id="prev-page">
+          <i class="fas fa-arrow-circle-left">Prev Page</i>
+        </button>
+        <button class="btn" id="next-page">
+          Next Page <i class="fas fa-arrow-circle-right"></i>
+        </button>
+        <span class="page-info">
+          Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+      </div> -->
 
-        <!-- list of alternate words to cycle through -->
-        <span aira-hidden="true" class="text__alternate">Programmer</span>
-        <span aira-hidden="true" class="text__alternate">UX Designer</span>
-        <span aira-hidden="true" class="text__alternate">UI Designer</span>
-      </h2>
-      <div class="icons">
-        <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-      </div>
+      <h1 class="lg-heading">My <span class="text-secondary">Resume</span></h1>
+
+      <canvas id="pdf-render"></canvas>
     </main>
 
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/resume.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
