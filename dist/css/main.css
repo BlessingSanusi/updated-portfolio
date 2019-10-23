@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
+
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
@@ -13,15 +14,19 @@
   background: #fff;
   transition: all 0.5s ease-out;
 }
+
 .menu-btn.close {
   transform: rotate(180deg);
 }
+
 .menu-btn.close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
+
 .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
 }
@@ -32,9 +37,11 @@
   width: 100%;
   visibility: hidden;
 }
+
 .menu.show {
   visibility: visible;
 }
+
 .menu-branding,
 .menu-nav {
   display: flex;
@@ -46,6 +53,7 @@
   height: 100vh;
   overflow: hidden;
 }
+
 .menu-nav {
   margin: 0;
   padding: 0;
@@ -54,17 +62,21 @@
   transform: translate3d(0px, -100%, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
 }
+
 .menu-branding {
   background: rgba(16, 69, 91, 0.9);
   transform: translate3d(0px, 100%, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
 }
+
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
@@ -72,16 +84,20 @@
   border-radius: 50%;
   border: solid 3px #ffaf20;
 }
+
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
 }
-.menu .nav-item.current > a {
+
+.menu .nav-item.current>a {
   color: #ffaf20;
 }
+
 .menu .nav-link {
   display: inline-block;
   position: relative;
@@ -93,6 +109,7 @@
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
+
 .menu .nav-link:hover {
   color: #ffaf20;
 }
@@ -113,6 +130,8 @@
   transition-delay: 0.4s;
 }
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -125,11 +144,13 @@ body {
   font-family: "Playfair Display", serif;
   line-height: 1.5;
 }
+
 body#bg-img {
   background: url(../images/backgroundImg.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+
 body#bg-img:after {
   content: "";
   position: absolute;
@@ -147,11 +168,13 @@ h3 {
   margin: 0;
   font-weight: 400;
 }
+
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
 }
+
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
@@ -179,21 +202,37 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
 }
+
 main .icons {
   margin-top: 1rem;
 }
+
 main .icons a {
   padding: 0.4rem;
 }
+
 main .icons a:hover {
   color: #ffaf20;
   transition: all 0.5s ease-out;
 }
+
 main#home {
   overflow: hidden;
 }
+
 main#home h1 {
   margin-top: 20vh;
+  text-align: center;
+}
+
+main#home .text {
+  margin-left: 55vh;
+
+}
+
+main .icons {
+  margin-left: 55vh;
+
 }
 
 .text__featured {
@@ -202,6 +241,7 @@ main#home h1 {
   opacity: 0;
   animation: fadeIn 0.75s ease-in-out 0s 1 normal forwards running;
 }
+
 .text__featured::after {
   content: "";
   position: absolute;
@@ -209,9 +249,10 @@ main#home h1 {
   left: 0;
   height: 2px;
   width: 0%;
-  background-color: currentColor;
+  background-color: #ffaf20;
   animation: animateUnderline 1s ease-in-out 0s 1 normal forwards running;
 }
+
 .text__alternate {
   position: absolute;
   opacity: 0;
@@ -219,46 +260,61 @@ main#home h1 {
   margin-left: 0.3125em;
   animation: fadeInDown 12.5s ease-in-out 0s 1 normal forwards running;
 }
+
 /*topToBottom Animation*/
 @keyframes fadeInDown {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   10% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   25% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   30% {
     opacity: 0;
     transform: translateY(50px);
   }
+
   80% {
     opacity: 0;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes animateUnderline {
   0% {
     width: 0%;
   }
+
   100% {
     width: 100%;
   }
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
 }
 
 .about-info {
@@ -269,44 +325,80 @@ main#home h1 {
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
+
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
   border: #ffaf20 3px solid;
 }
+
 .about-info .bio {
   grid-area: bio;
   font-size: 1.2rem;
 }
-.about-info .job-1 {
+
+/* .about-info .skill-1 {
   grid-area: job1;
 }
-.about-info .job-2 {
+
+.about-info .skill-2 {
   grid-area: job2;
-}
-.about-info .job-3 {
-  grid-area: job3;
-}
-.about-info .job {
+} */
+
+#about .skills {
   background: #145571;
   padding: 0.5rem;
   border-bottom: #ffaf20 5px solid;
+  width: 50%;
+  font-size: 1.5rem;
+  /* text-align: center; */
+  margin-left: 70vh;
 }
 
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) !important;
 }
+
 .projects img {
-  width: 100%;
+  width: 450px;
+  height: 300px;
   border: 2px #fff solid;
 }
+
 .projects img:hover {
   opacity: 0.5;
   transition: all 0.5s ease-out;
 }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-out;
+}
+
+.boxes div:hover {
+  padding: 0.5rem 1.5rem;
+  background: #eece1a;
+  color: #000;
+}
+
+.boxes div:hover span {
+  color: #000;
+}
+
 
 .btn,
 .btn-dark,
@@ -316,6 +408,7 @@ main#home h1 {
   border: 0;
   margin-bottom: 0.3rem;
 }
+
 .btn:hover,
 .btn-dark:hover,
 .btn-light:hover {
@@ -358,34 +451,41 @@ main#home h1 {
     align-items: center;
     text-align: center;
   }
+
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
   }
+
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
   }
+
   ul.menu-nav.show,
   div.menu-branding.show {
     transform: translate(0, 0, 0);
   }
+
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 20px;
   }
+
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
   }
+
   .menu-branding .portrait {
     background: url(..images/portrait.jpg);
     width: 150px;
     height: 150px;
   }
+
   .about-info {
     grid-template-areas:
       "bioimage"
@@ -395,6 +495,7 @@ main#home h1 {
       "job3";
     grid-template-columns: 1fr;
   }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -405,12 +506,15 @@ main#home h1 {
     margin-top: 10vh;
     font-size: 75px;
   }
+
   main#about h1 {
     font-size: 4rem;
   }
+
   main#about h2 {
     font-size: 1.5rem;
   }
+
   .projects {
     grid-template-columns: 1fr;
   }
