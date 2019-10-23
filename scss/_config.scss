@@ -1,5 +1,5 @@
-$primary-color: #10455b;
-$overlay-color: #10455b;
+$primary-color: #082029;
+$overlay-color: #082029;
 $secondary-color: #ffaf20;
 $show-home-image: true;
 $home-image: url(../images/backgroundImg.jpg);
@@ -33,7 +33,9 @@ $background-opacity: 0.7;
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return #000;
-  } @else {
+  }
+
+  @else {
     @return #fff;
   }
 }
