@@ -5,8 +5,7 @@
   "main": "index.js",
   "homepage": "https://blessingsanusi.github.io/updated-portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Blessing Sanusi",
   "license": "MIT",
