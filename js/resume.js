@@ -1,4 +1,4 @@
-const url = "../dist/doc/BlessingSanusi_Resume.pdf";
+const url = "../doc/BlessingSanusi_Resume.pdf";
 
 let pdfDoc = null,
   pageNum = 1,
@@ -16,7 +16,9 @@ const renderPage = num => {
   //Get page
   pdfDoc.getPage(num).then(page => {
     // console.log(page);
-    const viewport = page.getViewport({ scale });
+    const viewport = page.getViewport({
+      scale
+    });
     canvas.height = viewport.height;
     canvas.width = viewport.width;
 
