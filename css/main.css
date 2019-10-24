@@ -77,13 +77,15 @@
   transform: translate3d(0, 0, 0);
 }
 
-.menu-branding .portrait {
+/* .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../images/portrait.jpg");
+  margin: auto;
+  background: url("../images/me.png");
   border-radius: 50%;
   border: solid 3px #ffaf20;
-}
+} */
+
 
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -330,6 +332,8 @@ ul {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
+  height: 250px;
+  width: 250px;
   border: #ffaf20 3px solid;
 }
 
@@ -481,7 +485,7 @@ ul {
   }
 
   .menu-branding .portrait {
-    background: url(..images/portrait.jpg);
+    background: url(..images/me.png);
     width: 150px;
     height: 150px;
   }
