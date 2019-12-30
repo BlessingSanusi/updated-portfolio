@@ -357,7 +357,8 @@ ul {
   width: 50%;
   font-size: 1.5rem;
   /* text-align: center; */
-  margin-left: 70vh;
+  margin-left: 20vh;
+  text-align: center;
 }
 
 .projects {
@@ -446,7 +447,7 @@ ul {
 
 @media screen and (max-width: 768px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
@@ -494,9 +495,9 @@ ul {
     grid-template-areas:
       "bioimage"
       "bio"
-      "job1"
-      "job2"
-      "job3";
+      "skill-1"
+      "skill-2";
+      
     grid-template-columns: 1fr;
   }
 
@@ -519,8 +520,15 @@ ul {
     font-size: 1.5rem;
   }
 
-  .projects {
-    grid-template-columns:1fr;
+  .projects{
+    grid-template-columns:none;
     
+  }
+
+  #about .skills{
+    /* text-align: center; */
+    /* padding: 30px;*/
+    margin-left: 20px;
+    width: 100%;
   }
 }
