@@ -446,7 +446,7 @@ ul {
 
 @media screen and (max-width: 768px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 100px 1fr;
   }
 }
 
@@ -520,6 +520,7 @@ ul {
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
+    
   }
 }
