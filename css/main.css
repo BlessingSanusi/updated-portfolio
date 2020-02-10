@@ -86,7 +86,6 @@
   border: solid 3px #ffaf20;
 } */
 
-
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
@@ -96,7 +95,7 @@
   transform: translate3d(0, 0, 0);
 }
 
-.menu .nav-item.current>a {
+.menu .nav-item.current > a {
   color: #ffaf20;
 }
 
@@ -132,8 +131,6 @@
   transition-delay: 0.4s;
 }
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -143,7 +140,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   line-height: 1.5;
 }
 
@@ -154,7 +151,7 @@ body#bg-img {
 }
 
 body#bg-img:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -229,12 +226,10 @@ main#home h1 {
 
 main#home .text {
   margin-left: 55vh;
-
 }
 
 main .icons {
   margin-left: 55vh;
-
 }
 
 .text__featured {
@@ -245,7 +240,7 @@ main .icons {
 }
 
 .text__featured::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -323,8 +318,8 @@ ul {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    'bioimage bio bio'
+    'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -404,7 +399,6 @@ ul {
   color: #000;
 }
 
-
 .btn,
 .btn-dark,
 .btn-light {
@@ -441,11 +435,14 @@ ul {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 @media screen and (max-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -490,22 +487,23 @@ ul {
 
   .about-info {
     grid-template-areas:
-      "bioimage"
-      "bio"
-      "skill-1"
-      "skill-2";
-      
+      'bioimage'
+      'bio'
+      'skill-1'
+      'skill-2';
+
     grid-template-columns: 1fr;
   }
 
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 500px) {
-
   main {
-    padding: 2rem; }
+    padding: 2rem;
+  }
 
   main#home h1 {
     margin-top: 10vh;
@@ -514,7 +512,8 @@ ul {
 
   main .lg-heading {
     margin-top: 1rem;
-    font-size: 5rem; }
+    font-size: 5rem;
+  }
 
   main#about h1 {
     font-size: 4rem;
@@ -525,9 +524,10 @@ ul {
   }
 
   .projects {
-    grid-template-columns: 1fr; } 
+    grid-template-columns: 1fr;
+  }
 
-  #about .skills{
+  #about .skills {
     /* text-align: center; */
     /* padding: 30px;*/
     margin-left: 20px;
